@@ -9,7 +9,7 @@ st.set_page_config(page_title="ASCLEPIUS")
 # Replicate Credentials
 with st.sidebar:
     st.title('ASCLEPIUS')
-    st.write('THE CREATOR OF THIS CHATBOT IS RUDRAKSH GUPTA AND AYUSH BHOWAL.')
+    st.write('BY RUDRAKSH GUPTA AND AYUSH BHOWAL.')
     if 'REGISTRATION_TOKEN' in st.secrets:
         st.success('REGISTRATION TOKEN ALREADY PROVIDED!', icon='✅')
         replicate_api = st.secrets['REGISTRATION_TOKEN']
