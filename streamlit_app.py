@@ -21,7 +21,7 @@ with st.sidebar:
             st.success('Proceed to entering your prompt message!', icon='👉')
     os.environ['REGISTRATION_TOKEN'] = replicate_api
 
-    st.subheader('Models and parameters')
+    st.subheader('MODEL/VERSION')
     selected_model = st.sidebar.selectbox('Choose Model/Version', ['ASCLEPIUS - 1.0', 'ASCLEPIUS - 2.0'], key='selected_model')
     if selected_model == 'ASCLEPIUS - 1.0':
         llm = 'a16z-infra/llama7b-v2-chat:4f0a4744c7295c024a1de15e1a63c880d3da035fa1f49bfd344fe076074c8eea'
